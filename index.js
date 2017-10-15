@@ -31,7 +31,7 @@ r;ship - Ships 2 users. (args required: 1)
 \`message.author.username\`
 \`message.content\`
 
-Relationship Status: ${relStat[Math.floor(Math.random * relStat.length)]}`)
+Relationship Status: ${relStat[Math.floor(Math.random() * relStat.length)]}`)
 });
 
 client.login(process.env.BOT_TOKEN);
