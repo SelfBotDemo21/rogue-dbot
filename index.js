@@ -13,8 +13,6 @@ const relStat = [
 ]
 
 client.on('message', msg => {
-  let args = msg.content.split(' ').slice(1).join(' ')
-  
   if (msg.content.startsWith(prefix + 'ping')) {
     msg.channel.send("Pinging... ❤").then(m => {
       m.edit(`Pong! - Time Taken: ${m.createdTimestamp - msg.createdTimestamp}ms`)
@@ -28,6 +26,7 @@ r;ship - Ships 2 users. (args required: 1)`)
   }
   
   if (msg.content.startsWith(prefix + 'ship')) {
+    let args = msg.content.split(' ').slice(1).join(' ')
     if (!args) {
       return message.reply("Please provide arguments.")
     }
