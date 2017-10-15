@@ -31,9 +31,7 @@ r;ship - Ships you with someone/something.`)
       return msg.reply(`Please provide arguments, ${msg.author.username}`)
     }
     msg.channel.send(`❤ **Shipping** ❤\n
-\`${msg.author.username}\`
-\`${args}\`
-
+${msg.author.username} x ${args}\n
 Relationship Status: **${relStat[Math.floor(Math.random() * relStat.length)]}**`)
   }
 });
