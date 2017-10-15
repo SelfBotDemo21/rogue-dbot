@@ -22,7 +22,7 @@ client.on('message', msg => {
   if (msg.content.startsWith(prefix + 'help')) {
     msg.author.send(`List of commands:\n
 r;ping - Checks if I'm still responding (w/ response time)
-r;ship - Ships 2 users. (args required: 1)
+r;ship - Ships 2 users. (args required: 1)`
   }
   
   if (msg.content.startsWith(prefix + 'ship')) {
