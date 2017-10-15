@@ -1,0 +1,14 @@
+{
+  "name": "rogue",
+  "version": "1.0.0",
+  "description": "A fun, multi-purpose discord bot that was made for your enjoyment.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "goddy",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
