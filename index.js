@@ -21,22 +21,22 @@ client.on('message', msg => {
   
   if (msg.content.startsWith(prefix + 'help')) {
     msg.author.send(`List of commands:\n
-r;ping - Checks if I'm still responding (w/ response time)
-r;ship - Ships 2 users. (args required: 1)`)
+r;ping - Checks if I'm still responding (w/ response time).
+r;ship - Ships you with someone/something.`)
   }
   
   if (msg.content.startsWith(prefix + 'ship')) {
     let args = msg.content.split(' ').slice(1).join(' ')
     if (!args) {
-      return message.reply("Please provide arguments.")
+      return msg.reply(`Please provide arguments, ${msg.author.username}`)
     }
     msg.channel.send(`❤ **Shipping** ❤\n
 
-\`${message.author.username}\`
+\`${msg.author.username}\`
 \`${args}\`
 
-Relationship Status: **${relStat[Math.floor(Math.random() * relStat.length)]}**`)
-}
+Relationship Status: ${relStat[Math.floor(Math.random() * relStat.length])}`)
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
