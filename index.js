@@ -28,10 +28,10 @@ r;ship - Ships 2 users. (args required: 1)`)
   if (msg.content.startsWith(prefix + 'ship')) {
     msg.channel.send(`❤ **Shipping** ❤\n
 
-\`message.author.username\`
-\`message.content\`
+\`${message.author.username}\`
+\`${message.content}\`
 
-Relationship Status: ${relStat[Math.floor(Math.random() * relStat.length)]}`)
+Relationship Status: **${relStat[Math.floor(Math.random() * relStat.length)]}**`)
 }
 });
 
